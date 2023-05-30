@@ -2,11 +2,12 @@
 
 -- Specify the additional plugins you want to install
 lvim.plugins = {
-  {
-    "folke/trouble.nvim",
-    cmd = "TroubleToggle",
-  },
-  -- theme
+  -- {
+  --   "folke/trouble.nvim",
+  --   cmd = "TroubleToggle",
+  -- },
+
+  -- additional theme
   { "catppuccin/nvim" },
 
   -- Git

@@ -21,4 +21,14 @@ mv ~/.config/lvim ~/.config/lvim-old
 git clone git@github.com:przbadu/lvim_config ~/.config/lvim
 ```
 
+## Debugger
+
+- Install `codelldb` to debug rust codes, follow:
+- Open a lunarvim editor, then type `:Mason` to open Mason
+- from the `DAP` tab, search and install `codelldb`
+
+With that, you now can open a rust file and
+- Add breakpoint using `<leader>dt`
+- Run
+
 That's it enjoy!!
