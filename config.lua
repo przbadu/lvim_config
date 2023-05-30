@@ -1,0 +1,5 @@
+require("custom.general")
+require("custom.theme")
+require("custom.keymappings")
+require("custom.plugins")
+require("custom.plugin_config")
