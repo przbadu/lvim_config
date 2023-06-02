@@ -1,8 +1,8 @@
 -- theme.lua
 
 -- Set the colorscheme to "lunar"
-lvim.colorscheme = "lunar"
--- lvim.colorscheme = "catppuccin"
+-- lvim.colorscheme = "lunar"
+-- vim.opt.colorscheme = "catppuccin" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 -- Disable Git icons in the statusline
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
