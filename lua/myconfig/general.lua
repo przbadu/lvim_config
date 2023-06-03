@@ -8,3 +8,4 @@ lvim.format_on_save.enabled = true
 
 -- Enable relative line numbers
 vim.o.relativenumber = true
+

@@ -3,7 +3,11 @@
 -- Specify the additional plugins you want to install
 lvim.plugins = {
   -- additional theme
-  { "catppuccin/nvim",          name = "catppuccin" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+  },
   -- trouble
   {
     "folke/trouble.nvim",

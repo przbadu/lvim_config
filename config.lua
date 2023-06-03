@@ -1,5 +1,5 @@
+require("myconfig.plugins")
+require("myconfig.theme")
 require('myconfig.general')
 require('myconfig.keymappings')
-require("myconfig.theme")
-require("myconfig.plugins")
 require("myconfig.plugin_config")
