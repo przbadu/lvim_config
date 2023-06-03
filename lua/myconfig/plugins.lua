@@ -24,6 +24,7 @@ lvim.plugins = {
   -- ruby on rails
   { "tpope/vim-rails" },
   { "tpope/vim-surround" },
+  { "suketa/nvim-dap-ruby" }, -- debugger support using nvim-dap
 
   -- typescript
   { "MunifTanjim/prettier.nvim" },
@@ -31,5 +32,7 @@ lvim.plugins = {
   { "windwp/nvim-autopairs" },
 
   -- rust
-  { 'simrat39/rust-tools.nvim' },
+  { "simrat39/rust-tools.nvim" },
+  { "saecki/crates.nvim" },
+  { "j-hui/fidget.nvim" },
 }
