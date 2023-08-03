@@ -21,6 +21,13 @@ mv ~/.config/lvim ~/.config/lvim-old
 git clone git@github.com:przbadu/lvim_config ~/.config/lvim
 ```
 
+## Vim tmux navigator
+
+
+- Make sure you setup vim tmux navigator to get the switching between vim and tmux easy
+- Use TPM (tmux plugin manager) and install the plugin
+- Read: https://github.com/christoomey/vim-tmux-navigator to setup vim-tmux-navigator in tmux
+
 ## Debugger
 
 - Install `codelldb` to debug rust codes, follow:

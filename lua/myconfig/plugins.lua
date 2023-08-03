@@ -7,6 +7,8 @@ lvim.plugins = {
     "catppuccin/nvim",
     name = "catppuccin",
   },
+  -- Vim tmux
+  { "christoomey/vim-tmux-navigator" },
   -- trouble
   {
     "folke/trouble.nvim",
