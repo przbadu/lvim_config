@@ -14,6 +14,12 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  -- improve default vim.ui interface. Try renaming file from nvim-tree for example
+  {
+    'stevearc/dressing.nvim',
+    event = "VeryLazy",
+    opts = {},
+  },
 
   -- useful for dap, dap-ui, rust-tools
   { "nvim-lua/plenary.nvim" },
