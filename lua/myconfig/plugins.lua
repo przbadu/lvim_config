@@ -7,10 +7,38 @@ lvim.plugins = {
     "catppuccin/nvim",
     name = "catppuccin",
   },
+
+  -- Global find and replace on current file
+  -- <leader>S, <leader>sw, <leader>sp
+  { 'nvim-pack/nvim-spectre' },
+
+  -- TODO: examples
+  -- PREF: performance comment
+  -- HACK: monkey patch
+  -- NOTE: notes
+  -- FIX: this needs fixing
+  -- WARNING: this is a warning
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      signs = true,
+      ---
+    }
+  },
+
+  -- Vim tmux
+  { "christoomey/vim-tmux-navigator" },
   -- trouble
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
+  },
+  -- improve default vim.ui interface. Try renaming file from nvim-tree for example
+  {
+    'stevearc/dressing.nvim',
+    event = "VeryLazy",
+    opts = {},
   },
 
   -- useful for dap, dap-ui, rust-tools
@@ -19,6 +47,15 @@ lvim.plugins = {
 
   -- Git
   { "kdheepak/lazygit.nvim" },
+  {
+    'f-person/git-blame.nvim',
+    config = function()
+      require('gitblame').setup {
+         --Note how the `gitblame_` prefix is omitted in `setup`
+        enabled = false,
+      }
+    end,
+  },
 
   -- ruby on rails
   { "tpope/vim-rails" },
