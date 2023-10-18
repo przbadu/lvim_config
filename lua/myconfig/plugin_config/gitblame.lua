@@ -18,4 +18,4 @@
 -- %Y  full year (1998)
 -- %y  two-digit year (98) [00-99]
 -- %%  the character `%´
-let g:gitblame_date_format = '%r'
+vim.g.gitblame_date_format = '%r'
