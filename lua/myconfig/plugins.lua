@@ -8,6 +8,9 @@ lvim.plugins = {
     name = "catppuccin",
   },
 
+  -- github copilot
+  { 'github/copilot.vim' },
+
   -- Global find and replace on current file
   -- <leader>S, <leader>sw, <leader>sp
   { 'nvim-pack/nvim-spectre' },
@@ -23,7 +26,6 @@ lvim.plugins = {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       signs = true,
-      ---
     }
   },
 
