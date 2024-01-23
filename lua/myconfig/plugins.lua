@@ -3,13 +3,10 @@
 -- Specify the additional plugins you want to install
 lvim.plugins = {
 	-- additional theme
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-	},
+	{ "catppuccin/nvim", name = "catppuccin" },
 
-  -- Tagbar
-  { "preservim/tagbar" },
+	-- Tagbar
+	{ "preservim/tagbar" },
 
 	-- github copilot
 	{ "github/copilot.vim" },
@@ -18,12 +15,7 @@ lvim.plugins = {
 	-- <leader>S, <leader>sw, <leader>sp
 	{ "nvim-pack/nvim-spectre" },
 
-	-- TODO: examples
-	-- PREF: performance comment
-	-- HACK: monkey patch
-	-- NOTE: notes
-	-- FIX: this needs fixing
-	-- WARNING: this is a warning
+	-- Highlight TODO, FIXME, etc...
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -34,28 +26,15 @@ lvim.plugins = {
 
 	-- Vim tmux
 	{ "christoomey/vim-tmux-navigator" },
+
 	-- trouble
 	{
 		"folke/trouble.nvim",
 		cmd = "TroubleToggle",
 	},
-	-- improve default vim.ui interface. Try renaming file from nvim-tree for example
-	{
-		"stevearc/dressing.nvim",
-		event = "VeryLazy",
-		opts = {
-			input = {
-				enabled = true,
-				prompt = "❯ ",
-				prefix = "❯ ",
-				suffix = " ",
-			},
-		},
-	},
 
 	-- useful for dap, dap-ui, rust-tools
 	{ "nvim-lua/plenary.nvim" },
-	{ "j-hui/fidget.nvim" },
 
 	-- Git
 	{ "kdheepak/lazygit.nvim" },
@@ -69,12 +48,15 @@ lvim.plugins = {
 		end,
 	},
 
+	-- vim repeat (extend feature of .)
+	{ "tpope/vim-repeat" },
+
 	-- ruby on rails
 	{ "tpope/vim-rails" },
 	{ "tpope/vim-surround" },
 	{ "suketa/nvim-dap-ruby" }, -- debugger support using nvim-dap
 
-	-- typescript
+	-- Next.js
 	{ "MunifTanjim/prettier.nvim" },
 
 	-- rust
@@ -94,13 +76,5 @@ lvim.plugins = {
 				},
 			})
 		end,
-	},
-	{
-		"j-hui/fidget.nvim",
-    branch = 'legacy',
-		event = "LspAttach",
-		opts = {
-			-- options
-		},
 	},
 }
